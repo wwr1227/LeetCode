@@ -3,12 +3,12 @@ public class Solution {
         // Start typing your Java solution below
         // DO NOT write main() function
         if(A==null || A.length<1)
-      	return 0;
-		int index=-1;
-		for(int i=0;i<A.length;i++){
-			if(A[i]!=elem)
-				A[++index]=A[i];
-		}
-		return index+1;
+      		return 0;
+	int index=-1;
+	for(int i=0;i<A.length;i++){
+		if(A[i]!=elem)
+			A[++index]=A[i];
+	}
+	return index+1;
     }
 }
