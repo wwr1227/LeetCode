@@ -4,17 +4,17 @@ public class Solution {
         // DO NOT write main() function
     	if(board==null || board.length==0)
 			return false;
-		int len = board.length;
+	int len = board.length;
         for(int i=0;i<len;i++){
-			for(int j=0;j<len;j++){
-				if(board[i][j]=='.')
-					continue;
-				if(!isValid(board,i,j))
-					return false;
-			}
+		for(int j=0;j<len;j++){
+			if(board[i][j]=='.')
+				continue;
+			if(!isValid(board,i,j))
+				return false;
 		}
+	}
 		return true;
-    }
+    	}
 	public boolean isValid(char[][] board, int x, int y){
 		for(int i=0;i<board.length;i++){
 			if(y!=i&&board[x][y]==board[x][i])
