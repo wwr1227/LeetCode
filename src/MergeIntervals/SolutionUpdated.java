@@ -17,7 +17,7 @@ class IntervalComparator implements Comparator {
         if(interval0.start== interval1.start)
             return interval0.end - interval1.end;
         else
-		    return interval0.start - interval1.start;
+	    return interval0.start - interval1.start;
 	}
 }
 public class Solution {
