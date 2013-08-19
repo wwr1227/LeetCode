@@ -6,7 +6,7 @@ public class Solution {
 		if (n == 0 || k == 0)
 			return "";
 		int[] factorial = new int[n + 1];
-        factorial[0]=1;
+        	factorial[0]=1;
 		StringBuilder str = new StringBuilder();
 		for (int i = 1; i <= n; ++i) {
 			str.append(i);
