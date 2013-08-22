@@ -18,10 +18,10 @@ public class Solution {
                 nums.add(new ArrayList<Integer>(item));
                 return;
         }
-       for(int i=begin;i<n.length;i++){
-            item.add(n[i]);
-            combineHandler(n,i+1,step+1,k,item,nums);
-            item.remove(item.size()-1);
-       }
+        if(begin>=n.length) return;
+        item.add(n[begin]);
+        combineHandler(n,begin+1,step+1,k,item,nums);
+        item.remove(item.size()-1);
+        combineHandler(n,begin+1,step,k,item,nums);
     }
 }
