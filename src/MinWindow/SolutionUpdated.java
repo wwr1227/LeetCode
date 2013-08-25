@@ -34,8 +34,8 @@ public class Solution {
 			}
 		}
         if(minWindowBegin==-1)
-            return "";
+		return "";
         else
-		    return S.substring(minWindowBegin, minWindowBegin + minWindow);
+		return S.substring(minWindowBegin, minWindowBegin + minWindow);
 	}
 }
