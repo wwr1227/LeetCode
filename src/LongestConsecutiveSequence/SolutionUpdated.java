@@ -13,9 +13,9 @@ public class Solution {
 		int longestCount = 1;
 		while (!priorityQueue.isEmpty()) {
 			int cur = priorityQueue.poll();
-		if(temp==cur){
-		continue;
-		}else if (temp + 1 == cur) {
+			if(temp==cur){
+			continue;
+			}else if (temp + 1 == cur) {
 				count++;
 				temp++;
 			} else {
