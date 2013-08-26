@@ -33,7 +33,7 @@ public class Solution {
 			}
 		}
 		TreeNode root = new TreeNode(rootValue);
-		root.left=buildTreeHandler(preorder,inorder,preLeft+1,preLeft+pos-inLeft,inLeft,pos);
+		root.left=buildTreeHandler(preorder,inorder,preLeft+1,preLeft+pos-inLeft,inLeft,pos-1);
 		root.right=buildTreeHandler(preorder,inorder,preLeft+pos-inLeft+1,preRight,pos+1,inRight);
 		return root;
 	}
