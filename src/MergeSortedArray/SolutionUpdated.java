@@ -2,7 +2,7 @@ public class Solution {
     public void merge(int A[], int m, int B[], int n) {
         // Start typing your Java solution below
         // DO NOT write main() function
-    	int len=m+n;
+    		int len=m+n;
 		int i=m-1;
 		int j=n-1;
 		int k=len-1;
