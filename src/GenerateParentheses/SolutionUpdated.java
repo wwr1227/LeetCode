@@ -1,14 +1,14 @@
 public class Solution {
-    public ArrayList<String> generateParenthesis(int n) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        ArrayList<String> ans = new ArrayList<String>();
-    	String item = "";
-        if(n<=0)
+	public ArrayList<String> generateParenthesis(int n) {
+	// Start typing your Java solution below
+	// DO NOT write main() function
+		ArrayList<String> ans = new ArrayList<String>();
+	    	String item = "";
+		if(n<=0)
 			return ans;
 		dfs(ans,0,0,n,item);
 		return ans;		
-    }
+	}
 	public void dfs(ArrayList<String> ans, int left, int right, int n, String pare){
 		if (left < right) return;
 		if(left==right && left==n){
