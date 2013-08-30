@@ -13,7 +13,7 @@ public class Solution {
     public int maxPathSum(TreeNode root) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        ans = 0;
+        	ans = 0;
 		if(root==null)
 			return ans;
 		ans = root.val;
@@ -28,6 +28,6 @@ public class Solution {
 		int rightSum = maxPathSumHandler(root.right,curSum);
 		int curMax = Math.max(root.val, Math.max(leftSum+root.val,rightSum+root.val));
 		ans = Math.max(ans,Math.max(curMax, root.val+leftSum+rightSum));
-        return curMax;
+        	return curMax;
 	}
 }
