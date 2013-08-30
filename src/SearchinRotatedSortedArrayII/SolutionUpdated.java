@@ -1,8 +1,8 @@
 public class Solution {
-    public boolean search(int[] A, int target) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        if(A==null||A.length==0)
+	public boolean search(int[] A, int target) {
+	// Start typing your Java solution below
+	// DO NOT write main() function
+		if(A==null||A.length==0)
 			return false;
 		int start = 0;
 		int end = A.length-1;
