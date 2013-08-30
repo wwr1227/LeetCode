@@ -14,16 +14,16 @@ public class Solution {
         // Start typing your Java solution below
         // DO NOT write main() function
         if(head==null||head.next==null)
-          return head;
+            return head;
         ListNode cur = new ListNode(0);
         cur.next = head;
         ListNode ans = cur;
         while(cur!=null){
-          ListNode pre = cur.next;
-          while(pre!=null && pre.val==cur.val)
-          	pre=pre.next;
-          cur.next = pre;
-          cur = cur.next;			
+            ListNode pre = cur.next;
+            while(pre!=null && pre.val==cur.val)
+              	pre=pre.next;
+            cur.next = pre;
+            cur = cur.next;			
         }
         return ans.next;
     }
