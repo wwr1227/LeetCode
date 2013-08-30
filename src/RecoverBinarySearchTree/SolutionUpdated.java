@@ -20,7 +20,7 @@ public class Solution {
         TreeNode mistake_node1 = null;
         TreeNode mistake_node2 = null;
 		
-	while(!current){
+	while(current!=null){
 		if (current.left==null) {
 			if(parent!=null && parent.val > current.val){
 				if(mistake_node1==null)
