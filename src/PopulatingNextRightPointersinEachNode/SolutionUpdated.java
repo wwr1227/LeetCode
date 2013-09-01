@@ -1,3 +1,4 @@
+//Time complexity:O(n)
 /**
  * Definition for binary tree with next pointer.
  * public class TreeLinkNode {
