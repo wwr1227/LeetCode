@@ -1,3 +1,4 @@
+//Time complexity:O(n)
 /**
  * Definition for binary tree
  * public class TreeNode {
@@ -8,11 +9,11 @@
  * }
  */
  public class Solution {
-    public ArrayList<Integer> inorderTraversal(TreeNode root) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-      ArrayList<Integer> ans = new ArrayList<Integer>();
-        if(root==null)
+	public ArrayList<Integer> inorderTraversal(TreeNode root) {
+	// Start typing your Java solution below
+	// DO NOT write main() function
+	      	ArrayList<Integer> ans = new ArrayList<Integer>();
+		if(root==null)
 			return ans;
 		inorderTraversalHelper(root, ans);
 		return ans;
