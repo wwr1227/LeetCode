@@ -1,3 +1,4 @@
+//Time complexity:O(log(m+n))
 public class Solution {
 	public double findMedianSortedArrays(int A[], int B[]) {
 		// Start typing your Java solution below
