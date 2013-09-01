@@ -1,10 +1,4 @@
-package FourSum;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-
+////Time complexity:O(n^2*logn)
 class TwoSum {
 	int oneNum;
 	int twoNum;
@@ -16,7 +10,6 @@ class TwoSum {
 		this.total = total;
 	}
 }
-
 class FourSumComparator implements Comparator<Object> {
 	public int compare(Object o1, Object o2) {
 		TwoSum p1 = (TwoSum) o1;
@@ -30,7 +23,6 @@ class FourSumComparator implements Comparator<Object> {
 			return p1.total - p2.total;
 	}
 }
-
 public class Solution {
 	public ArrayList<ArrayList<Integer>> fourSum(int[] num, int target) {
 		// Start typing your Java solution below
@@ -39,7 +31,6 @@ public class Solution {
 		ArrayList<TwoSum> ts = new ArrayList<TwoSum>();
 		if (num == null || num.length < 4)
 			return ans;
-
 		Arrays.sort(num);
 		int len = num.length;
 		for (int i = 0; i < len; i++) {
@@ -47,11 +38,7 @@ public class Solution {
 				ts.add(new TwoSum(i, j, num[i] + num[j]));
 			}
 		}
-
 		Collections.sort(ts, new FourSumComparator());
-		// for (int i = 0; i < ts.size(); i++) {
-		// System.out.println(ts.get(i).total);
-		// }
 		for (int i = 0; i < ts.size(); i++) {
 			int val = target - ts.get(i).total;
 			int beginIndex = binarySearchBegin(ts, i + 1, ts.size() - 1, val);
@@ -65,7 +52,6 @@ public class Solution {
 					continue;
 				if (ts.get(j).twoNum == ts.get(i).twoNum)
 					continue;
-
 				ArrayList<Integer> item = new ArrayList<Integer>();
 				item.add(num[ts.get(i).oneNum]);
 				item.add(num[ts.get(i).twoNum]);
@@ -78,9 +64,7 @@ public class Solution {
 		}
 		return ans;
 	}
-
-	public int binarySearchBegin(ArrayList<TwoSum> ts, int start, int end,
-			int value) {
+	public int binarySearchBegin(ArrayList<TwoSum> ts, int start, int end, int value) {
 		while (start <= end) {
 			int mid = start + (end - start) / 2;
 			if (ts.get(mid).total >= value)
@@ -90,9 +74,7 @@ public class Solution {
 		}
 		return end + 1;
 	}
-
-	public int binarySearchEnd(ArrayList<TwoSum> ts, int start, int end,
-			int value) {
+	public int binarySearchEnd(ArrayList<TwoSum> ts, int start, int end, int value) {
 		while (start <= end) {
 			int mid = start + (end - start) / 2;
 			if (ts.get(mid).total <= value)
@@ -102,18 +84,4 @@ public class Solution {
 		}
 		return start - 1;
 	}
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Solution su = new Solution();
-		int[] num = { -3, 0, 7, -2, -6, -5, 1, 5, -1, -8, -9, -8, 7, 1, 1, 3,
-				1, 10 };
-		int target = 0;
-		System.out.println(su.fourSum(num, target));
-
-	}
-
 }
