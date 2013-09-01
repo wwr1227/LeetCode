@@ -12,7 +12,7 @@ public class Solution {
 				if (j >= strs[i].length()) 
 					return strs[0].substring(0, strs[i].length());
 				if (strs[i].charAt(j) != strs[0].charAt(j))
-                    return strs[0].substring(0, j);
+                    			return strs[0].substring(0, j);
 			}
 		}
 		return strs[0];
