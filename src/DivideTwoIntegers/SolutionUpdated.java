@@ -1,14 +1,4 @@
 ////Time complexity:O(logn*logn)
-class ListNode {
-  int val;
-	ListNode next;
-
-	ListNode(int x) {
-		val = x;
-		next = null;
-	}
-}
-
 public class Solution {
 	public int divide(int dividend, int divisor) {
 		// Start typing your Java solution below
