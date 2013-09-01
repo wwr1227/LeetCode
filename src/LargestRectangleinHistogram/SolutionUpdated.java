@@ -1,3 +1,4 @@
+//Time complexity:O(n)
 public class Solution {
      public int largestRectangleArea(int[] height) {
         // Start typing your Java solution below
