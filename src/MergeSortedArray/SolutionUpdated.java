@@ -1,3 +1,4 @@
+//Time complexity:O(n+m)
 public class Solution {
     public void merge(int A[], int m, int B[], int n) {
         // Start typing your Java solution below
