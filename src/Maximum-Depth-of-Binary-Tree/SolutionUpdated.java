@@ -12,12 +12,12 @@ public class Solution {
     	public int maxDepth(TreeNode root) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        	if(root==null)
-			return 0;
-		if(root.left==null && root.right==null)
-			return 1;
-		int leftHeigh=maxDepth(root.left)+1;
-		int rightHeigh=maxDepth(root.right)+1;
-		return Math.max(leftHeigh,rightHeigh);
+	        if(root==null)
+	            return 0;
+	        int leftDepth =  maxDepth(root.left);
+	        int rightDepth =  maxDepth(root.right);
+	        if(leftDepth==0) return rightDepth+1;
+	        if(rightDepth==0) return leftDepth+1;
+	        return Math.max(leftDepth,rightDepth)+1;
     	}
 }
