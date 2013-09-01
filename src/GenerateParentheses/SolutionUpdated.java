@@ -1,3 +1,4 @@
+//Time complexity:O(n)
 public class Solution {
 	public ArrayList<String> generateParenthesis(int n) {
 	// Start typing your Java solution below
