@@ -1,4 +1,4 @@
-//Time complexity:O(n)
+//Time complexity:O(nlogn)
 /**
  * Definition for an interval.
  * public class Interval {
