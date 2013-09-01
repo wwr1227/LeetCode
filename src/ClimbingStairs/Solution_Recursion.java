@@ -1,0 +1,16 @@
+//Time complexity:O(2^n)
+public class Solution {
+    public int climbStairs(int n) {
+        // Start typing your Java solution below
+        // DO NOT write main() function
+        if(n<0)
+            return 0;
+        if(n==0)
+            return 1;
+        if(n==1)
+            return 1;
+        if(n==2)
+            return 2;
+        return climbStairs(n-1)+climbStairs(n-2);
+    }
+}
