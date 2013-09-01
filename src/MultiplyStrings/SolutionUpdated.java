@@ -1,3 +1,4 @@
+//Time complexity:O(n^2)
 public class Solution {
 	public String multiply(String num1, String num2) {
 		if (num1 == null || num2 == null || num1.length() == 0
@@ -58,14 +59,4 @@ public class Solution {
 		A[i] = A[j];
 		A[j] = temp;
 	}
-
-	// public static void main(String[] args) {
-	// System.out.println(new Solution().multiply("89", "8"));
-	// }
-	//
-	// public void print(int[] A) {
-	// for (int i = 0; i < A.length; i++)
-	// System.out.print(A[i] + " ");
-	// System.out.println();
-	// }
 }
