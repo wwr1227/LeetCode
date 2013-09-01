@@ -1,3 +1,4 @@
+//Time complexity:O(n^2)
 public class Solution {
     public ArrayList<ArrayList<Integer>> generate(int numRows) {
         // Start typing your Java solution below
