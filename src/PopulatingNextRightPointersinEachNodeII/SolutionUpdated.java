@@ -1,3 +1,4 @@
+//Time complexity:O(n)
 /**
  * Definition for binary tree with next pointer.
  * public class TreeLinkNode {
@@ -10,10 +11,12 @@ public class Solution {
     public void connect(TreeLinkNode root) {
         // Start typing your Java solution below
         // DO NOT write main() function
-		if (root == null)
+    		if (root == null)
 			return;
+        	if(root.left==null&&root.right==null)
+             		return;
 		TreeLinkNode cur =root.next;
-		while(cur!=null){
+		while(cur!=null){           
 			if(cur.left!=null){
 				cur = cur.left;
 				break;
