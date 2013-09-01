@@ -1,7 +1,6 @@
-
+//Time complexity:O(C(1,3)^n)
 public class Solution {
-  static Map<Integer, String> telephone = buildTelephone();
-
+  	static Map<Integer, String> telephone = buildTelephone();
 	public ArrayList<String> letterCombinations(String digits) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
@@ -11,16 +10,13 @@ public class Solution {
 		letterCombinationsHelper(digits, 0, "", ans);
 		return ans;
 	}
-
-	public void letterCombinationsHelper(String digits, int begin, String item,
-			ArrayList<String> ans) {
+	public void letterCombinationsHelper(String digits, int begin, String item, ArrayList<String> ans) {
 		if (begin == digits.length()) {
 			if (!ans.contains(item))
 				ans.add(item);
 			return;
 		}
-		String candidates = telephone.get(Character.getNumericValue(digits
-				.charAt(begin)));
+		String candidates = telephone.get(Character.getNumericValue(digits.charAt(begin)));
 		for (int j = 0; j < candidates.length(); j++) {
 			item += String.valueOf(candidates.charAt(j));
 			letterCombinationsHelper(digits, begin + 1, item, ans);
