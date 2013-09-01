@@ -15,11 +15,11 @@ class IntervalComparator implements Comparator {
 		// TODO Auto-generated method stub
 		Interval interval0 = (Interval) arg0;
 		Interval interval1 = (Interval) arg1;
-        if(interval0.start== interval1.start)
-            return interval0.end - interval1.end;
-        else
-	    return interval0.start - interval1.start;
-	}
+	        if(interval0.start== interval1.start)
+	            return interval0.end - interval1.end;
+	        else
+		    return interval0.start - interval1.start;
+		}
 }
 public class Solution {
     	public ArrayList<Interval> merge(ArrayList<Interval> intervals) {
