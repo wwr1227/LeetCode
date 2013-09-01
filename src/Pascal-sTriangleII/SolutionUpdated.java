@@ -1,3 +1,4 @@
+//Time complexity:O(n^2)
 public class Solution {
     public ArrayList<Integer> getRow(int rowIndex) {
         // Start typing your Java solution below
