@@ -1,4 +1,4 @@
-//O(n)
+//Time complexity:O(n)
 public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         // Start typing your Java solution below
