@@ -1,3 +1,4 @@
+//Time complexity:O(nlogn)
 /**
  * Definition for an interval.
  * public class Interval {
@@ -21,10 +22,10 @@ class IntervalComparator implements Comparator {
 	}
 }
 public class Solution {
-    public ArrayList<Interval> merge(ArrayList<Interval> intervals) {
+    	public ArrayList<Interval> merge(ArrayList<Interval> intervals) {
         // Start typing your Java solution below
         // DO NOT write main() function
-    	ArrayList<Interval> ans= new  ArrayList<Interval>();
+    		ArrayList<Interval> ans= new  ArrayList<Interval>();
 		if(intervals==null||intervals.size()==0)
 			return ans;
 		Collections.sort(intervals, new IntervalComparator());
@@ -35,12 +36,12 @@ public class Solution {
 			if(start<=intervals.get(i).end && end>=intervals.get(i).start){
 				start = Math.min(start,intervals.get(i).start);
 				end = Math.max(end,intervals.get(i).end);
-                ans.remove(ans.size()-1);
+        			ans.remove(ans.size()-1);
 				ans.add(new Interval(start,end));
 			}else{
 				ans.add(intervals.get(i));
 			}
 		}
-        return ans;
-    }
+        	return ans;
+    	}
 }
