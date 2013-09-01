@@ -4,7 +4,7 @@ public class Solution {
         // Start typing your Java solution below
         // DO NOT write main() function
         int ans=0;
-        if(n<=1) return ans;
+        if(n<=1) return n;
         int f0=1;
         int f1=1;
         for(int i=2;i<=n;i++){
