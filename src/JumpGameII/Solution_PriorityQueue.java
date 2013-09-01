@@ -1,20 +1,10 @@
-package JumpGameII;
-
-import java.util.PriorityQueue;
-import java.util.Queue;
-
 public class Solution_PriorityQueue {
 	public int jump(int[] A) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
 
-		if (A == null)
-			return 0;
+		if (A == null||A.length==0) return 0;
 		int len = A.length;
-
-		if (len == 0)
-			return 0;
-
 		Queue<Integer> pq = new PriorityQueue<Integer>();
 		pq.offer(0);
 		for (int i = 0; i < len; i++) {
@@ -30,8 +20,6 @@ public class Solution_PriorityQueue {
 			if (pq.isEmpty())
 				return 0;
 			ans[i] = ans[pq.peek()] + 1;
-			// if (i + A[i] > pq)
-			// pq.offer(i);
 		}
 		return ans[len - 1];
 	}
