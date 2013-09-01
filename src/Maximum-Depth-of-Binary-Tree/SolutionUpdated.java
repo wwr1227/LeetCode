@@ -1,3 +1,4 @@
+//Time complexity:O(n)
 /**
  * Definition for binary tree
  * public class TreeNode {
@@ -8,18 +9,15 @@
  * }
  */
 public class Solution {
-    public int maxDepth(TreeNode root) {
+    	public int maxDepth(TreeNode root) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        
-    	if(root==null)
+        	if(root==null)
 			return 0;
 		if(root.left==null && root.right==null)
 			return 1;
-		if(root.left!=null && root.right==null)
-			return maxDepth(root.left)+1;
-		if(root.right!=null&& root.left==null)
-			return maxDepth(root.right)+1;
-		return Math.max(maxDepth(root.left)+1,maxDepth(root.right)+1);
-    }
+		int leftHeigh=maxDepth(root.left)+1;
+		int rightHeigh=maxDepth(root.right)+1;
+		return Math.max(leftHeigh,rightHeigh);
+    	}
 }
