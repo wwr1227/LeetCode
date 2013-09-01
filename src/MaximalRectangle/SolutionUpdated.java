@@ -1,9 +1,10 @@
+//Time complexity:O(n^2)
 public class Solution {
     public int maximalRectangle(char[][] matrix) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        if(matrix==null||matrix.length==0)
-    		return 0;
+	        if(matrix==null||matrix.length==0)
+	    		return 0;
 		int m = matrix.length;
 		int n = matrix[0].length;
 		int ans = 0;
@@ -33,6 +34,6 @@ public class Solution {
 				ans = Math.max(ans,(right[j]-left[j]-1)*height[j]);
 			}
 		}
-        return ans;
+        	return ans;
     }
 }
