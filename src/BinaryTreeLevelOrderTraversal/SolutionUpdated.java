@@ -1,3 +1,4 @@
+//Time complexity:O(n)
 /**
  * Definition for binary tree
  * public class TreeNode {
@@ -8,15 +9,15 @@
  * }
  */
 public class Solution {
-    public ArrayList<ArrayList<Integer>> levelOrder(TreeNode root) {
+	public ArrayList<ArrayList<Integer>> levelOrder(TreeNode root) {
         // Start typing your Java solution below
         // DO NOT write main() function
-    	ArrayList<ArrayList<Integer>>  ans = new ArrayList<ArrayList<Integer>>();
+    		ArrayList<ArrayList<Integer>>  ans = new ArrayList<ArrayList<Integer>>();
 		ArrayList<Integer> layer = new ArrayList<Integer>();
 		if(root==null)
 			return ans;
-	    Queue<TreeNode> queue = new LinkedList<TreeNode>();
-    	queue.offer(root);
+	    	Queue<TreeNode> queue = new LinkedList<TreeNode>();
+    		queue.offer(root);
 		queue.offer(null);
 		while (!queue.isEmpty()) {
 			TreeNode node = queue.poll();
@@ -34,5 +35,5 @@ public class Solution {
 			}
 		}
 		return ans;
-    }
+    	}
 }
