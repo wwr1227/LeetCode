@@ -1,3 +1,4 @@
+//Time complexity:O(nlogn)
 public class Solution {
     public int longestConsecutive(int[] num) {
 		// Start typing your Java solution below
@@ -14,7 +15,7 @@ public class Solution {
 		while (!priorityQueue.isEmpty()) {
 			int cur = priorityQueue.poll();
 			if(temp==cur){
-			continue;
+				continue;
 			}else if (temp + 1 == cur) {
 				count++;
 				temp++;
