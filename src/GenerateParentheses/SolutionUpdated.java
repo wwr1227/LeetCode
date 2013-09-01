@@ -1,4 +1,4 @@
-//Time complexity:O(n)
+//Time complexity:O(Catalan(n))
 public class Solution {
 	public ArrayList<String> generateParenthesis(int n) {
 	// Start typing your Java solution below
