@@ -1,3 +1,4 @@
+//Time complexity:O(n)
 public class Solution {
     public int maxSubArray(int[] A) {
         // Start typing your Java solution below
