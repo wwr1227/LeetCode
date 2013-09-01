@@ -1,3 +1,4 @@
+//Time complexity:O(n)
 public class Solution {
     public int maxProfit(int[] prices) {
         // Start typing your Java solution below
