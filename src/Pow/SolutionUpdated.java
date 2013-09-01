@@ -1,3 +1,4 @@
+//Time complexity:O(logn)
 public class Solution {
     public double pow(double x, int n) {
 		// Start typing your Java solution below
@@ -21,9 +22,5 @@ public class Solution {
 			return tempPow * tempPow;
 		else
 			return tempPow * tempPow * x;
-	}
-
-	public static void main(String[] args) {
-		System.out.println(new Solution().getPow(2, -2));
 	}
 }
