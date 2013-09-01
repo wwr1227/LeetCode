@@ -1,3 +1,4 @@
+//Time complexity:O(n*m)
 public class Solution {
     public String strStr(String haystack, String needle) {
         // Start typing your Java solution below
