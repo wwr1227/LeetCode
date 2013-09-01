@@ -1,4 +1,4 @@
-
+//Time complexity:O(k*n)
 public class Solution {
     public ListNode mergeKLists(ArrayList<ListNode> lists) {
       // Start typing your Java solution below
