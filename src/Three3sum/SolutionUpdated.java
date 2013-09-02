@@ -1,8 +1,9 @@
+//O(n^2)
 public class Solution {
-    public ArrayList<ArrayList<Integer>> threeSum(int[] num) {
+    	public ArrayList<ArrayList<Integer>> threeSum(int[] num) {
         // Start typing your Java solution below
         // DO NOT write main() function
-      ArrayList<ArrayList<Integer>> res  = new ArrayList<ArrayList<Integer>>();
+	      	ArrayList<ArrayList<Integer>> res  = new ArrayList<ArrayList<Integer>>();
 		ArrayList<Integer> item = new ArrayList<Integer>();
 		if(num==null || num.length<3)
 			return res;
@@ -25,8 +26,8 @@ public class Solution {
 				else
 					end--;
 			}
-            while(++i<num.length-2&&num[i]==num[i-1]);
+	    		while(++i<num.length-2&&num[i]==num[i-1]);
 		}
-        return res;
-    }
+        	return res;
+    	}
 }
