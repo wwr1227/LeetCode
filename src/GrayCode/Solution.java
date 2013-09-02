@@ -1,31 +1,16 @@
-package GrayCode;
-
+//O(2^n)
 import java.util.ArrayList;
-
 public class Solution {
 	public ArrayList<Integer> grayCode(int n) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
 		ArrayList<Integer> ans = new ArrayList<Integer>();
 		int num = (int) Math.pow(2, n);
-
 		for (int i = 0; i < num; i++) {
 			ans.add((i >> 1) ^ i);
 		}
 		return ans;
 	}
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Solution su = new Solution();
-
-		int n = 3;
-		System.out.println(su.grayCode(n));
-	}
-
 }
 /**
  * The gray code is a binary numeral system where two successive values differ
