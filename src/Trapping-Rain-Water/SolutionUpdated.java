@@ -1,3 +1,4 @@
+//O(n)
 public class Solution {
     public int trap(int[] A) {
         // Start typing your Java solution below
