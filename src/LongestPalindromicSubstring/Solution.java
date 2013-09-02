@@ -1,3 +1,4 @@
+//O(n)
 public class Solution {
     public String longestPalindrome(String s) {
         // Start typing your Java solution below
@@ -16,7 +17,7 @@ public class Solution {
             int mirror_i=2*center-i;
             if(right>i)
                 plen[i]=Math.min(right-i,plen[mirror_i]);
-            while(i+plen[i]+1<ss.length()-1&&i-plen[i]-1>0&& 
+            while(i+plen[i]+1<ss.length()&&i-plen[i]-1>=0&& 
                     ss.charAt(i+plen[i]+1)==ss.charAt(i-plen[i]-1))
                 plen[i]++;
             if(plen[i]+i>right){
@@ -32,8 +33,8 @@ public class Solution {
               centerIndex = i;
             }
         }
-        int start=(centerIndex - 1 - maxLen)/2;
-        int end =centerIndex;
+        int start=(centerIndex - maxLen)/2;
+        int end =start+maxLen;
         return s.substring(start, end);
     }
 }
