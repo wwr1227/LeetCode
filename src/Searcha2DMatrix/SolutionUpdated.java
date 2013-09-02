@@ -1,3 +1,4 @@
+//O(m+n)
 public class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         // Start typing your Java solution below
