@@ -1,4 +1,4 @@
-//O(n)
+//O(n) 
 public class Solution {
     public int removeDuplicates(int[] A) {
         // Start typing your Java solution below
