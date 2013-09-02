@@ -1,9 +1,4 @@
-package WordLadderII;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedList;
-
+//O(n*wordLen*26)
 public class Solution {
 
 	public ArrayList<ArrayList<String>> findLadders(String start, String end,
@@ -56,51 +51,4 @@ public class Solution {
 		}
 		return new ArrayList<ArrayList<String>>();
 	}
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Solution su = new Solution();
-		String start = "hot";
-		String end = "dog";
-		HashSet<String> dict = new HashSet<String>();
-		dict.add("hot");
-		dict.add("cog");
-		dict.add("dog");
-		dict.add("tot");
-		dict.add("hog");
-		dict.add("hop");
-		dict.add("pot");
-		dict.add("dot");
-		System.out.println(su.findLadders(start, end, dict));
-	}
-	/**
-	 * 
-	 "hot", "dog", ["hot","cog","dog","tot","hog","hop","pot","dot"]
-	 * [["hot","dot","pot","tot","hog","hop","dog"]]
-	 * [["hot","dot","dog"],["hot","hog","dog"]]
-	 * 
-	 * "hot", "dog", ["hot","dog","cog","pot","dot"] [["hot","dot","pot","dog"]]
-	 * [["hot","dot","dog"]]
-	 * 
-	 * "hit", "cog", ["hot","cog","dot","dog","hit","lot","log"]
-	 * [["hit","hot","dot","lot","hit","dog","log","cog"]]
-	 * [["hit","hot","dot","dog","cog"],["hit","hot","lot","log","cog"]]
-	 * 
-	 * "hit", "cog", ["hot","hit","cog","dot","dog"]
-	 * [["hit","hot","dot","hit","dog","cog"]] [["hit","hot","dot","dog","cog"]]
-	 * 
-	 * "red", "tax", ["ted","tex","red","tax","tad","den","rex","pee"]
-	 * [["red","ted","rex","red","tad","tex","tax"]]
-	 * [["red","ted","tad","tax"],[
-	 * "red","ted","tex","tax"],["red","rex","tex","tax"]]
-	 * 
-	 * "lost", "cost", ["most","fist","lost","cost","fish"] [["lost","cost"]]
-	 * [["lost","cost"]]
-	 * 
-	 * "lost", "miss", ["most","mist","miss","lost","fist","fish"]
-	 * [["lost","most","lost","mist","miss"]] [["lost","most","mist","miss"]]
-	 */
 }
