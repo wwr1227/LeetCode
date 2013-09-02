@@ -1,9 +1,4 @@
-package WordLadder;
-
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
-
+//O(n*wordLen*26)
 public class Solution {
 	public int ladderLength(String start, String end, HashSet<String> dict) {
 		// Start typing your Java solution below
