@@ -1,3 +1,4 @@
+//O(C(k,n))
 public class Solution {
     public ArrayList<ArrayList<Integer>> combine(int n, int k) {
         // Start typing your Java solution below
