@@ -1,3 +1,4 @@
+//O(n)
 public class Solution {
     public void sortColors(int[] A) {
         // Start typing your Java solution below
