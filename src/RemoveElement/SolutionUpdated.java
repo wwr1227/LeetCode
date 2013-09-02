@@ -1,3 +1,4 @@
+//O(n)
 public class Solution {
     public int removeElement(int[] A, int elem) {
         // Start typing your Java solution below
