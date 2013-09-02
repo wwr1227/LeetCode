@@ -1,3 +1,4 @@
+//O(2^n)
 public class Solution {
     public ArrayList<ArrayList<Integer>> subsets(int[] S) {
         // Start typing your Java solution below
