@@ -1,3 +1,4 @@
+//O(n)
 public class Solution {
     public String simplifyPath(String path) {
 		// Start typing your Java solution below
