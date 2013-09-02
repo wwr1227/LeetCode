@@ -1,4 +1,4 @@
-// O(1)
+// O(lgN)
 public class Solution {
     public int reverse(int x) {
         // Start typing your Java solution below
