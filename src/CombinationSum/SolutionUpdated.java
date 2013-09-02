@@ -1,3 +1,4 @@
+//O(2^n)
 public class Solution {
     public ArrayList<ArrayList<Integer>> combinationSum(int[] candidates, int target) {
     // Start typing your Java solution below
