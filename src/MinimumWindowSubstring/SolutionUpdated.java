@@ -1,3 +1,4 @@
+//O(n)
 public class Solution {
     public String minWindow(String S, String T) {
 		// Start typing your Java solution below
