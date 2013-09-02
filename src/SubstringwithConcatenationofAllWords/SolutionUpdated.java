@@ -1,3 +1,4 @@
+//O(L.length*wordLen*s.length())
 public class Solution {
     public ArrayList<Integer> findSubstring(String S, String[] L) {
         // Start typing your Java solution below
