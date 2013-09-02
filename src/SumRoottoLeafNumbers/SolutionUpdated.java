@@ -1,3 +1,4 @@
+//O(n)
 /**
  * Definition for binary tree
  * public class TreeNode {
