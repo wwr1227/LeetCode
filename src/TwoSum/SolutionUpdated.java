@@ -1,10 +1,11 @@
+//O(n)
 public class Solution {
     public int[] twoSum(int[] numbers, int target) {
         // Start typing your Java solution below
         // DO NOT write main() function
       
 		int[] ans ={0,0};
-        if(numbers==null || numbers.length==0)
+        	if(numbers==null || numbers.length==0)
 			return ans;
 		
 		int len = numbers.length;
