@@ -1,3 +1,4 @@
+//O(n^2)
 public class Solution {
 	public ArrayList<ArrayList<String>> partition(String s) {
 
