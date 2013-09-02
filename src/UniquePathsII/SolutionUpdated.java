@@ -1,3 +1,4 @@
+//O(n^2)
 public class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         // Start typing your Java solution below
