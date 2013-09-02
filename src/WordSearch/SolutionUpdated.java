@@ -1,3 +1,4 @@
+//O(n^2)
 public class Solution {
     public boolean exist(char[][] board, String word) {
 		// Start typing your Java solution below
