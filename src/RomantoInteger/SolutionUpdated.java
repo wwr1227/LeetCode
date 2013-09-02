@@ -1,3 +1,4 @@
+//O(n)
 public class Solution {
     public int romanToInt(String s) {
         // Start typing your Java solution below
@@ -6,7 +7,7 @@ public class Solution {
 		if(s==null||s.length()==0)
 			return 0;
 		s=s.toUpperCase();	
-        Map<Character, Integer> romanMap = new HashMap<Character, Integer>();
+        	Map<Character, Integer> romanMap = new HashMap<Character, Integer>();
 		romanMap.put('I', 1);
 		romanMap.put('V', 5);
 		romanMap.put('X', 10);
