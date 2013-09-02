@@ -1,4 +1,4 @@
-//O(n)
+//O(n) 
 public class Solution {
     public int[] twoSum(int[] numbers, int target) {
         // Start typing your Java solution below
