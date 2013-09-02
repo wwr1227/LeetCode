@@ -1,9 +1,4 @@
-package SubsetsII;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-
+//O(2^n)
 public class Solution {
 	public ArrayList<ArrayList<Integer>> subsetsWithDup(int[] num) {
 		// Start typing your Java solution below
@@ -36,15 +31,4 @@ public class Solution {
 		item.remove(item.size() - 1);
 		subsetsHelper(num, ans, item, index + 1);
 	}
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Solution su = new Solution();
-		int[] num = { 1, 2, 2 };
-		System.out.println(su.subsetsWithDup(num));
-	}
-
 }
