@@ -1,3 +1,4 @@
+//O(n)
 public class Solution {
     public int lengthOfLastWord(String s) {
         // Start typing your Java solution below
