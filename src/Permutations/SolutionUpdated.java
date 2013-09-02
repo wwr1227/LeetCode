@@ -1,3 +1,4 @@
+//O(A(n,n))
 public class Solution {
 	public ArrayList<ArrayList<Integer>> permute(int[] num) {
 	// Start typing your Java solution below
