@@ -1,3 +1,4 @@
+//O(n^3)
 public class Solution {
 	public boolean isValidSudoku(char[][] board) {
 	// Start typing your Java solution below
@@ -26,8 +27,7 @@ public class Solution {
 		for (int i = x / 3 * 3; i < x / 3 * 3 + 3; i++)
 			for (int j = y / 3 * 3; j < y / 3 * 3 + 3; j++)
 				if (!(i == x && j == y) && board[i][j] == board[x][y]) 
-				return false;
-		
+					return false;
 		return true;
 	}
 }
