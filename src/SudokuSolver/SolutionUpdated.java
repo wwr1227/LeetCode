@@ -1,3 +1,4 @@
+//O(9*n^3)
 public class Solution {
     public boolean solveSudoku(char[][] board) {
         // Start typing your Java solution below
