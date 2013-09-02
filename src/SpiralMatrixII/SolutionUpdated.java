@@ -1,3 +1,4 @@
+//O(n)
 public class Solution {
     public int[][] generateMatrix(int n) {
         // Start typing your Java solution below
