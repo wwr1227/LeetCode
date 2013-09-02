@@ -1,9 +1,5 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Stack;
-
+//O(n)
 public class Solution {
-
   public boolean isValid(String s) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
