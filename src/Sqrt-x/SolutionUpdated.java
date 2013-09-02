@@ -1,3 +1,4 @@
+//O(logN)
 public class Solution {
     public int sqrt(int x) {
 		// Start typing your Java solution below
