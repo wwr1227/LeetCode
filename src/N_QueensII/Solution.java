@@ -1,5 +1,5 @@
-package N_QueensII;
-
+//O(n)
+//http://www.matrix67.com/blog/archives/266
 public class Solution {
 	int count = 0;
 	int allQueen;
@@ -26,13 +26,4 @@ public class Solution {
 			}
 		}
 	}
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }
