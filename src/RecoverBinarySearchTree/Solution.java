@@ -1,27 +1,13 @@
-package RecoverBinarySearchTree;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-class TreeNode {
-	int val;
-	TreeNode left;
-	TreeNode right;
-
-	TreeNode(int x) {
-		val = x;
-	}
-}
-
+//O(nlogn)
 /**
- * Definition for binary tree public class TreeNode { int val; TreeNode left;
- * TreeNode right; TreeNode(int x) { val = x; } }
+ * Definition for binary tree
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
  */
-
-// !!!!
-// http://fisherlei.blogspot.com/2012/12/leetcode-recover-binary-search-tree.html
-// !!!
 public class Solution {
 	public void recoverTree(TreeNode root) {
 		// Start typing your Java solution below
