@@ -23,13 +23,13 @@ public class Solution {
         if(head==null)
 			return null;
 		int len=0;
-        ListNode cur = head;
+        	ListNode cur = head;
 		while(cur!=null){
 			len++;
 			cur=cur.next;
 		}
 		return generateBST(head,0,len-1);
-    }
+    	}
 	public TreeNode generateBST(ListNode head,int left,int right){
 		if(left>right)
 			return null;
