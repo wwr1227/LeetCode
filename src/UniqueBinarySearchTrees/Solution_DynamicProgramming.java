@@ -1,3 +1,4 @@
+//O(n^2)
 public class Solution {
     public int numTrees(int n) {
         // Start typing your Java solution below
