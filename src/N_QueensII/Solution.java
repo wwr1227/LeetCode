@@ -12,15 +12,15 @@ public class Solution {
 		cal(0, 0, 0);
 		return count;
 	}
-
+	//row、ld和rd，分别表示在纵列和两个对角线方向的限制条件下这一行的哪些地方不能放
 	public void cal(int row, int l, int r) {
 		if (row == allQueen) {
 			count++;
 		} else {
 			int curQueen;
-			curQueen = allQueen & (~(row | l | r));
+			curQueen = allQueen & (~(row | l | r));//得到所有可以放的位置
 			while (curQueen != 0) {
-				int newQueen = curQueen & (-curQueen);
+				int newQueen = curQueen & (-curQueen);//-a相当于not a + 1，其结果是取出最右边的那个1
 				curQueen = curQueen - newQueen;
 				cal(row + newQueen, (l + newQueen) << 1, (r + newQueen) >> 1);
 			}
