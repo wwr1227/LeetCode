@@ -1,3 +1,4 @@
+//O(n^2)
 public class Solution {
     int totalQueens = 0;
     public int totalNQueens(int n) {
