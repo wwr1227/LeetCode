@@ -1,3 +1,4 @@
+//O(n)
 public class Solution {
 	public boolean search(int[] A, int target) {
 	// Start typing your Java solution below
