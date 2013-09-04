@@ -1,4 +1,6 @@
 //O(n)
+//You may not modify the values in the list, only nodes itself can be changed.!!!
+//I forgot!
 /**
  * Definition for singly-linked list.
  * public class ListNode {
