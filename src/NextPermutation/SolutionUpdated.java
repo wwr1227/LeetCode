@@ -1,3 +1,4 @@
+//O(n)
 public class Solution {
     public void nextPermutation(int[] num) {
         // Start typing your Java solution below
