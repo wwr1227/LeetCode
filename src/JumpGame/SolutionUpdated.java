@@ -1,4 +1,4 @@
-//Time complexity:O(n^2)
+//Time complexity:O(n)
 public class Solution {
     public boolean canJump(int[] A) {
         // Start typing your Java solution below
