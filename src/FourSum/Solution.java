@@ -1,4 +1,4 @@
-//Time complexity:O(n^2*logn) -> O(n^4)
+//Time complexity:O(n^3*logn) -> O(n^4)
 //当{1.1.1.1.1.1.1} target=4 会退化
 class TwoSum {
 	int oneNum;
