@@ -1,4 +1,4 @@
-//O(n)
+//O(ln(n))
 public class Solution {
     public int romanToInt(String s) {
         // Start typing your Java solution below
