@@ -1,4 +1,4 @@
-//Time complexity:O(C(1,3)^n)
+//Time complexity:O(3^n)
 public class Solution {
   	static Map<Integer, String> telephone = buildTelephone();
 	public ArrayList<String> letterCombinations(String digits) {
