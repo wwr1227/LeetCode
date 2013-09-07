@@ -1,4 +1,4 @@
-//O(n^2)
+//O(n!)
 public class Solution {
     public ArrayList<String[]> solveNQueens(int n) {
         // Start typing your Java solution below
