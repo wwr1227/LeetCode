@@ -1,4 +1,4 @@
-//O(n)
+//O(lgn)
 public class Solution {
     public String intToRoman(int num) {
         // Start typing your Java solution below
