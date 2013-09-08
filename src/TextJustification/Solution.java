@@ -1,8 +1,4 @@
-package TextJustification;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
+// O(|S|) 
 public class Solution {
 	public ArrayList<String> fullJustify(String[] words, int L) {
 		// Start typing your Java solution below
