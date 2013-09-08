@@ -1,3 +1,4 @@
+//O(n)
 public class Solution {
   public String convert(String s, int nRows) {
 		// Start typing your Java solution below
