@@ -1,4 +1,4 @@
-//O(n)
+//O(ln(n))
 public class Solution {
     public boolean isPalindrome(int x) {
   	// Start typing your Java solution below
