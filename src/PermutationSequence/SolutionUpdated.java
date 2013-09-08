@@ -1,3 +1,4 @@
+//O(n^2)
 public class Solution {
     public String getPermutation(int n, int k) {
 		// Start typing your Java solution below
