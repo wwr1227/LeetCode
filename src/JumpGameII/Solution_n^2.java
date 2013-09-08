@@ -1,5 +1,4 @@
-package JumpGameII;
-
+//O(n^2)
 public class Solution {
 	public int jump(int[] A) {
 		// Start typing your Java solution below
