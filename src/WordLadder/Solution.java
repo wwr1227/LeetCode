@@ -1,4 +1,4 @@
-//O(n*wordLen*26)
+//O(|dict|*wordLen*26)
 public class Solution {
 	public int ladderLength(String start, String end, HashSet<String> dict) {
 		// Start typing your Java solution below
