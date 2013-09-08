@@ -1,4 +1,4 @@
-//O(n^2)
+//O(m*n*4^|word|) 
 public class Solution {
     public boolean exist(char[][] board, String word) {
 		// Start typing your Java solution below
